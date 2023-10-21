@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: seamusserver
+  labels:
+    app: seamuswebserver
+spec:
+  ports:
+  - port: 80
+  selector:
+    app: seamuswebserver
+  type: NodePort
+
